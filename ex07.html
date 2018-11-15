@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let time = parseFloat(prompt("Nhap so phut goi"));
+    let area = parseFloat(prompt("Nhap khu vuc goi (noi dia =1; ngoai dia = 2)"));
+    let result;
+    switch (area) {
+        case 1:
+            if (time < 6) {
+                result = time * 790;
+                alert(result);
+            } else {
+                result = 6 * 790 + (time - 6) * 1000;
+                alert(result);
+            }
+            break;
+        case 2:
+            if (time < 6) {
+                result = time * 1000;
+                alert(result);
+            } else {
+                result = 6 * 1000 + (time - 6) * 1500;
+                alert(result)
+            }
+            break;
+    }
+</script>
+</body>
+</html>

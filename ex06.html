@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("Gia tri hop dong (don vi tram trieu)"));
+    let hoaHong;
+    if (a <= 100) {
+        hoaHong = a * 0.07;
+        alert(hoaHong + " trieu dong");
+    } else if (a > 100 && a < 500)
+    {
+        hoaHong = a * 0.15;
+        alert(hoaHong + " trieu dong");
+    }else {
+        hoaHong = a * 0.2;
+        alert(hoaHong + " trieu dong");
+    }
+</script>
+</body>
+</html>
